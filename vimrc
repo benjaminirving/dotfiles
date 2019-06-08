@@ -8,10 +8,8 @@
 " vim is not vi
 set nocompatible
 
-" use a more compatible shell
-if $SHELL =~ "fish"
-    set shell=/bin/sh
-endif
+" 
+" set nolazyredraw
 
 " load plugins via vundle
 filetype off
@@ -67,7 +65,7 @@ set directory=/tmp
 
 " behaviour
 set backspace=indent,eol,start
-" set mouse=a
+set mouse=a
 set term=xterm-256color
 set modelines=0
 set textwidth=79
@@ -89,7 +87,7 @@ set visualbell
 set nofoldenable
 set ruler
 set number
-set relativenumber
+set number
 set listchars=tab:›\ ,trail:·
 set list
 
@@ -207,7 +205,4 @@ endif
 
 " vim-racer
 set hidden
-let g:racer_cmd = "/home/hannah/.cargo/bin/racer"
-let $RUST_SRC_PATH="/home/hannah/.cargo/src/rustc-1.8.0/src/"
-let $CARGO_HOME="/home/hannah/.cargo/"
 set tags=tags
